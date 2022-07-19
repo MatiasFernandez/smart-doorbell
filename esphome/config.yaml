@@ -1,0 +1,65 @@
+esphome:
+  name: doorbell
+
+esp8266:
+  board: d1_mini
+
+# Enable logging
+logger:
+
+# Enable Home Assistant API
+api:
+  password: !secret api_password
+
+ota:
+  password: !secret ota_password
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "Doorbell Fallback Hotspot"
+    password: !secret hotspot_password
+
+captive_portal:
+
+# Sensors with general information.
+sensor:
+  # Uptime sensor.
+  - platform: uptime
+    name: "Doorbell Uptime"
+
+  # WiFi Signal sensor.
+  - platform: wifi_signal
+    name: "Doorbell WiFi Signal"
+    update_interval: 60s
+
+binary_sensor:
+  - platform: gpio
+    name: "Doorbell"
+    icon: mdi:bell-ring
+    pin: D2
+    device_class: sound
+    filters:
+      - delayed_on: 10ms
+      - delayed_off: 2s
+
+  - platform: status
+    name: "Doorbell Status"
+
+button:
+  - platform: safe_mode
+    name: "Doorbell Restart (Safe Mode)"
+
+  - platform: restart
+    name: "Doorbell Restart"
+
+switch:
+  - platform: gpio
+    name: "Doorbell Chime"
+    icon: mdi:music
+    inverted: true
+    restore_mode: RESTORE_DEFAULT_ON
+    pin: D1
