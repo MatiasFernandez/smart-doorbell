@@ -13,6 +13,12 @@ La idea conceptual de la modificación seguramente pueda extenderse a otros timb
 
 [![Video explicativo](https://img.youtube.com/vi/C8Lh4hxncJc/0.jpg)](https://www.youtube.com/watch?v=C8Lh4hxncJc)
 
+## Funcionalidades
+
+- Poder recibir notificaciones de timbre directo en el celular
+- Disparar cualquier automatización que soporte Home Assistant
+- Silenciar el sonido del timbre directo desde Home Assistant
+
 ## Hardware
 
 - 1 timbre inalámbrico
