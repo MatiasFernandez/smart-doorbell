@@ -9,6 +9,10 @@ Me inspire en un [video de The Hookup](https://www.youtube.com/watch?v=xCQoOZNda
 
 La idea conceptual de la modificación seguramente pueda extenderse a otros timbres similares.
 
+**Video explicando el proyecto:**
+
+[![Video explicativo](https://img.youtube.com/vi/C8Lh4hxncJc/0.jpg)](https://www.youtube.com/watch?v=C8Lh4hxncJc)
+
 ## Hardware
 
 - 1 timbre inalámbrico
