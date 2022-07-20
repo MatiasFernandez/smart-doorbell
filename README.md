@@ -40,3 +40,4 @@ La idea conceptual de la modificación seguramente pueda extenderse a otros timb
 - ESPHome: https://esphome.io/
 - NodeMCU: https://nodemcu.readthedocs.io/en/release/
 - Wemos D1 Mini: https://www.wemos.cc/en/latest/d1/d1_mini.html
+- Circuitos para mutear audios: https://sound-au.com/articles/muting.html
